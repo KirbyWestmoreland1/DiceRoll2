@@ -8,7 +8,16 @@ This app simulates rolling dice. It was built in Kotlin and XML based on the tut
 - Dice image updates to match the roll
 
 ## My Enhancement
-I choose to go with my very own custom colored UI for the app and my very own icons and I also added a Roll History as well to keep track of previous rolled scores.
+- **Feature:** Displays the last 10 dice rolls in a scrollable list.
+- **Implementation:** 
+- `RollHistoryAdapter.kt`: Manages a `mutableListOf<Pair<Int, Int>>`, removes oldest roll when >10 using `removeAt(0)` and `notifyItemRemoved()`.
+- `MainActivity.kt`: Increments `rollCounter` and calls `addRoll()` on each dice tap.
+- `item_roll.xml`: Layout for each history item (`Roll #X: Y`).
+- **Layout:** `activity_main.xml` uses `CoordinatorLayout` with centered `MaterialCardView` for dice.
+- **Button Placement:** Click on dice to roll dice using `layout_gravity`.
+- **Styling:** `dimens.xml` and `activity_main.XML` for consistent sizes, Material 3 theme.
+- **Binding:** `ActivityMainBinding` for type-safe view access.
+- **Demo:** After 11 rolls, the first roll disappears from the top.
 
 ## How to Run
 1. Download the APK from the submission
