@@ -25,3 +25,8 @@ This app simulates rolling dice. It was built in Kotlin and XML based on the tut
 
 ## External Resources
 - https://developer.android.com/codelabs/basic-android-kotlin-compose-add-images#0
+
+## Screenshots
+<img width="872" height="919" alt="image" src="https://github.com/user-attachments/assets/38b62fb6-fd4a-4d76-a092-6ecb117684e0" />
+
+<img width="908" height="957" alt="image" src="https://github.com/user-attachments/assets/46a20ada-ea66-48f4-b8f3-bef7a3648c4e" />
